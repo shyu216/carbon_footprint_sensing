@@ -32,6 +32,24 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="transport"
+        options={{
+          title: 'Transport',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'map' : 'map-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="appliance"
+        options={{
+          title: 'Appliance',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'pause-circle' : 'pause-circle-outline'} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
